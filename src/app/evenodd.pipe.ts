@@ -9,7 +9,7 @@ export class EvenoddPipe implements PipeTransform {
       return value;
     }
     return value.filter((item, idx) =>
-      filter === "even" ? idx % 2 === 0 : idx % 2 === 1
+      filter === "even" ? item % 2 === 0 : item % 2 === 1
     );
   }
 }
